@@ -16,7 +16,7 @@ body {
 
 /* Main Banner */
 
-.header {
+header {
   height: 30rem;
   background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png');
   background-repeat: no-repeat;
@@ -58,7 +58,7 @@ body {
   display: none;
 }
 
-.header .headline {
+header .headline {
   display: flex;
   justify-content: flex-end;
 }
@@ -77,4 +77,11 @@ h1 {
   font-size: 2rem;
   line-height: 1.2;
   color: black;
+}
+
+/* Services Container */
+
+.services-container {
+  display: flex;
+  justify-content: center;
 }
