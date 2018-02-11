@@ -48,7 +48,6 @@ header {
   padding: 0 1rem;
 }
 
-
 .logo img {
   height: 1.5rem;
   padding-right: 1rem;
@@ -79,9 +78,210 @@ h1 {
   color: black;
 }
 
+@media only screen and (max-width: 1024px) {
+  header {
+    height: 22rem;
+    padding-top: 0;
+  }
+
+  .main-banner {
+    padding: 1.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem
+  }
+
+  .main-banner h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .navigation {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  header {
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  header span {
+    display: none;
+  }
+
+  .main-banner {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 9rem auto 0 auto;
+    text-align: center;
+  }
+
+  .main-banner h1 {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+}
+
 /* Services Container */
 
 .services-container {
   display: flex;
   justify-content: center;
+}
+
+@media only screen and (max-width: 470px) {
+  .services-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 3.77rem;
+  }
+}
+
+/* Services Section */
+
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 5rem;
+  height: 8rem;
+  margin: 3rem;
+  text-align: center;
+}
+
+.services img {
+  width: 5rem;
+}
+
+.services img.paper-icon {
+  width: 3.5rem;
+}
+
+@media only screen and (max-width: 470px) {
+  .services span {
+    font-size: 0.77rem;
+  }
+
+  .services {
+    margin-bottom: 1.54rem;
+  }
+}
+
+/* Bussiness Info */
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 41%;
+}
+
+.info.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 0;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: white;
+  background-color: cadetblue;
+  width: 10rem;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .info {
+    padding: 1rem;
+    width: 60%;
+  }
+
+  .info p {
+    font-size: 0.85rem;
+  }
+
+  .title {
+    font-size: .77rem;
+    width: 8rem;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .title {
+    font-size: .77rem;
+    text-align: center;
+    width: 8rem;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .info.container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .info {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .info p {
+    padding-left: .9rem;
+  }
+
+@media only screen and (max-width: 470px) {
+  .title {
+    width: 100%;
+    margin: 0:
+  }
+}
+
+}
+
+/* Footer */
+
+footer.container {
+  display: flex;
+  align-items: center;
+  background-color: azure;
+  padding: 4rem;
+  margin-top: 5rem;
+}
+
+footer img {
+  height: 1.5rem;
+  padding-right: 1rem
+}
+
+@media only screen and (max-width: 470px) {
+  footer {
+    justify-content: center;
+  }
+
+  footer span {
+    display: none;
+  }
+
+  footer img {
+    padding-left: 2rem;
+  }
+
+  h4 {
+    padding-right: 2.2rem;
+  }
 }
